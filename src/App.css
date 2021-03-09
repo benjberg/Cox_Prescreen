@@ -1,38 +1,50 @@
+h1 {
+  font-family:'Indie Flower', cursive; 
+  font-size: 3rem;
+}
+p {
+  background:rgb(
+    204,
+    204,
+    204
+  ); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.24); 
+  font-family:'Indie Flower', cursive;
+}
 .App {
+  padding-top: 2rem;
   text-align: center;
+  background: url('./assets/krystal.jpg')
+  center center/cover no-repeat;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.explination-text {
+ 
+  border: 1px solid black;
+  width: 50%;
+  padding: 1%;
+  margin: 1% auto;
+  font-size: 1.5rem;
+ 
+}
+.denote-text {
+  width: 30%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#outputs {
+  width: 20%;
+  margin: 2% auto;
+  padding: 2.5%;
+  border-radius: 40%;
+  background:rgb(
+    204,
+    204,
+    204
+  ); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.301);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

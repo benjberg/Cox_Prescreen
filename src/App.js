@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import TextArea from './components/TextArea';
 import './App.css';
-
+// change font, make add opacity to output text
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Prescreen</h1> 
+      <div className='text-container'>
+        <p className='explination-text'>The objective is to sum the counts for each key in the textarea, and display the totals for each key within the HTML
+        document. The default value should result in the output, "The total for John is 6. The total for Jane is 8."</p>
+</div>
+      <TextArea/>
+      
     </div>
   );
 }
